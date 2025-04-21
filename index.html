@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>My first three.js app</title>
+    <title>Into The Animal Cell</title>
     <link rel="stylesheet" href="style.css" />
     <style>
       body {
@@ -12,14 +12,13 @@
   </head>
   <body>
     <canvas id="c"></canvas>
-    <script type="importmap">
+    <script type="module" src="/main.js">
       {
         "imports": {
-          "three": "https://threejs.org/build/three.module.js",
-          "three/addons/": "https://threejs.org/examples/jsm/"
+          "three": "https://cdn.jsdeliv.net/npm/three@0.175.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.175.0/example/jsm/"
         }
       }
     </script>
-    <script type="module" src="main.js"></script>
   </body>
 </html>
